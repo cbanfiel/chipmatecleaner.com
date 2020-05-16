@@ -1,0 +1,177 @@
+html{
+    background-color: #eeeeee;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: calc(11px + 0.22vw);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    background-color: #ffffff;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.31); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4);
+}
+
+.container{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.heading_img{
+    background-color: #333333;
+    height: 65vh;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url('../img/redchips.jpg');
+    margin-bottom: 40px;
+
+    .image{
+        background-color: rgba(255,255,255,0.4);
+        padding: 3vh;
+        margin-bottom: 32vh;
+
+        img{
+            width: 50%;
+            height: auto;
+            max-width: 650px;
+            min-width: 350px;
+        }
+
+
+    }
+
+    .absolute{
+        position: absolute;
+        z-index: 3;
+        min-width: 250px;
+        width: 25%;
+        height: auto;
+        padding: 5px;
+        background-color: #ffffff;
+    }
+}
+
+
+.heading_img .content{
+    background: linear-gradient(135deg, rgba(75, 75, 75, 0.4) 0%, rgba(75,75,75,0.4) 100%);
+    opacity: 1;
+    min-height: 65vh;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    padding:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid #cccccc;
+
+    .content{
+        font-size: larger;
+        flex: 1;
+        min-width: 375px;
+        padding: 20px;
+    }
+
+    img{
+        min-height: 450px;
+        height: auto;
+        width: 100%;
+    }
+
+    ul{
+        list-style: none;
+        text-align: left;
+    }
+    
+    &:last-child{
+        border-bottom: 0px;
+    }
+}
+.nav{
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    color: #dddddd;
+    flex: 1;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+
+    img{
+        height: auto;
+        width: 50%;
+    }
+}
+
+.center{
+    text-align: center;
+}
+
+.card_title{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.dark{
+    color: #cccccc;
+    background-color: #292929;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    content{
+        flex: 1;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.logo{
+    img{
+        min-width: 250px;
+        width: 25%;
+        height: auto;
+        padding: 5px;
+        background-color: #ffffff;
+    }
+}
+
+
+@media only screen and (max-width: 993px) {
+    html{
+        padding: 0;
+        font-size: 14px;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+    }
+  }
+
+  video{
+      width: 100%;
+      max-width: 650px;
+      height: auto;
+  }

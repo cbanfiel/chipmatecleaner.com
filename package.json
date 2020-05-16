@@ -1,0 +1,12 @@
+{
+  "name": "poker-chip-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass source/stylesheets/index.scss build/stylesheets/index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
