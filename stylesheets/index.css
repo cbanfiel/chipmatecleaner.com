@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   background-color: #eeeeee;
   padding-left: 7vw;
@@ -48,7 +53,6 @@ body {
   padding: 5px;
   background-color: #ffffff;
 }
-
 .heading_img .content {
   background: linear-gradient(135deg, rgba(75, 75, 75, 0.4) 0%, rgba(75, 75, 75, 0.4) 100%);
   opacity: 1;
@@ -152,6 +156,31 @@ footer img {
   background-color: #ffffff;
 }
 
+.bottom_logos {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bottom_logos .content {
+  flex: 1;
+  align-self: center;
+  height: auto;
+  max-width: 525px;
+  padding: 10px;
+}
+.bottom_logos .content img {
+  width: 100%;
+}
+.bottom_logos .content:first-child {
+  margin-right: 40px;
+}
+.bottom_logos .content:last-child {
+  margin-top: 40px;
+}
+
 .virus {
   background-image: url("../img/virus.jpg");
   background-size: cover;
@@ -169,6 +198,24 @@ footer img {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+  }
+
+  .virus {
+    background-position: right;
+  }
+
+  .heading_img {
+    height: 40vh;
+  }
+
+  .heading_img .content {
+    height: 40vh;
+  }
+
+  .bottom_logos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 video {

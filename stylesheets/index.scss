@@ -1,4 +1,9 @@
 //vars
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 $color_dark: #292929;
 
@@ -58,19 +63,19 @@ body{
         padding: 5px;
         background-color: #ffffff;
     }
+
+    .content{
+        background: linear-gradient(135deg, rgba(75, 75, 75, 0.4) 0%, rgba(75,75,75,0.4) 100%);
+        opacity: 1;
+        min-height: 65vh;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-
-.heading_img .content{
-    background: linear-gradient(135deg, rgba(75, 75, 75, 0.4) 0%, rgba(75,75,75,0.4) 100%);
-    opacity: 1;
-    min-height: 65vh;
-    z-index: 2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .card{
     display: flex;
@@ -154,7 +159,6 @@ footer{
 
     content{
         flex: 1;
-
         img{
             width: 100%;
             height: auto;
@@ -169,6 +173,33 @@ footer{
         height: auto;
         padding: 5px;
         background-color: #ffffff;
+    }
+}
+
+.bottom_logos{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    .content{
+        flex: 1;
+        align-self: center;
+        height: auto;
+        max-width: 525px;
+        padding: 10px;
+        img{
+            width: 100%;
+        }
+
+        &:first-child{
+            margin-right: 40px;
+        }
+
+        &:last-child{
+            margin-top: 40px;
+        }
     }
 }
 
@@ -191,6 +222,26 @@ footer{
         padding: 0;
         background-color: #ffffff;
     }
+
+    .virus{
+        background-position: right;
+    }
+
+    .heading_img{
+        height: 40vh;
+    }
+
+    .heading_img .content{
+        height: 40vh;
+    }
+
+    .bottom_logos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
   }
 
   video{
