@@ -22,12 +22,11 @@ body {
 }
 
 .heading_img {
-  background-color: #333333;
+  background-color: #292929;
   height: 65vh;
   overflow: hidden;
   background-size: cover;
   background-image: url("../img/redchips.jpg");
-  margin-bottom: 40px;
 }
 .heading_img .image {
   background-color: rgba(255, 255, 255, 0.4);
@@ -64,9 +63,9 @@ body {
 .card {
   display: flex;
   flex-direction: row;
-  padding: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #cccccc;
 }
 .card .content {
@@ -95,6 +94,17 @@ body {
   color: #dddddd;
   flex: 1;
   text-align: center;
+}
+
+.title {
+  background-color: #292929;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  color: #cccccc;
+  flex: 1;
+  text-align: center;
+  padding: 40px;
+  margin: 0px;
 }
 
 footer {
@@ -140,6 +150,13 @@ footer img {
   height: auto;
   padding: 5px;
   background-color: #ffffff;
+}
+
+.virus {
+  background-image: url("../img/virus.jpg");
+  background-size: cover;
+  padding: 10px;
+  color: #eeeeee;
 }
 
 @media only screen and (max-width: 993px) {
