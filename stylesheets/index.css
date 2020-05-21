@@ -76,7 +76,7 @@ body {
   font-size: larger;
   flex: 1;
   min-width: 375px;
-  padding: 20px;
+  padding: 30px;
 }
 .card img {
   min-height: 450px;
@@ -168,7 +168,7 @@ footer img {
   flex: 1;
   align-self: center;
   height: auto;
-  max-width: 525px;
+  max-width: 650px;
   padding: 10px;
 }
 .bottom_logos .content img {
